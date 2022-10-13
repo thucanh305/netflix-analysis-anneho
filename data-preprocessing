@@ -1,0 +1,14 @@
+import numpy as np 
+import pandas as pd 
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+df=pd.read_csv('netflix.csv')
+df.drop_duplicates()
+df.shape
+df.columns
+df.head()
+df.sort_values(by="release_year",ascending=True)
+
+
+
