@@ -28,5 +28,12 @@ plt.title("Rating for NetFlix");
 
 (US['rating'].value_counts()/US.shape[0])*100
 
+
+#check 20 popular actors in the US
+plt.figure(figsize=(15,7))
+fav_actor= sns.barplot(x=US.cast.value_counts()[:20].index , y=US.cast.value_counts()[:20].values )
+fav_actor.set_xticklabels(US.cast.value_counts()[:20].index, rotation=40)
+for f in fav_actor.containers:
+    fav_actor.bar_label(f);
     
     
