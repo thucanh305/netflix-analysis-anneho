@@ -8,8 +8,8 @@ plt.show()
 
 
 plt.figure(figsize=(15,7))
-graph = sns.barplot(x=df.country.value_counts()[:15].index , y=df.country.value_counts()[:15].values )
-graph.set_xticklabels(df.country.value_counts()[:15].index, rotation=40)
+graph = sns.barplot(x=df.country.value_counts()[:20].index , y=df.country.value_counts()[:20].values )
+graph.set_xticklabels(df.country.value_counts()[:20].index, rotation=40)
 for a in graph.containers:
 graph.bar_label(a);
 
